@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block body %}
+<img src="{{ post.image.url }}" width="300px" height="250px">
+<h1>{{ post.title }}</h1>
+<p>{{ post.description|safe }}</p>
+{% endblock %}

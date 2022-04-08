@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<style type="text/css">
+
+
+    /* *{
+        margin: 0px;
+        padding: 0px;
+    } */
+    body{
+        font-family: arial;
+    }
+    .main{
+
+        margin: 2%;
+    }
+
+    .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+        }
+
+    .image img{
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    
+
+    
+    }
+
+    .title{
+    
+        text-align: center;
+        padding: 10px;
+    
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .des{
+        padding: 3px;
+        text-align: center;
+        
+        padding-top: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    button{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding:10px;
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+        transition: .5s;
+        cursor: pointer;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+
+    }
+    header{
+        background-color: #123C69;
+        width: 100%;
+        height: 100px;
+    }
+    .name{
+        display: inline-block;
+        font-size: 3vw;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace
+        font-weight: bold;
+    }
+    #tom{
+        display: inline-block;
+        font-size: 85px;
+        float: right;
+
+    }
+    #tom:hover{
+        text-decoration: underline;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* body{
+        background: ;
+    } */
+
+    .wrapper{
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search_box{
+        background: #643fef;
+        position: relative;
+        padding: 10px;
+        border-radius: 50px;
+        display: flex;
+    }
+
+    .search_box .search_btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #7a5cf0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .search_box .input_search{
+        outline: none;
+        border: 0;
+        background: #7a5cf0;
+        border-radius: 50px;
+        padding: 15px 20px;
+        width: 400px; 
+        height: 50px;
+        color: #fff;
+    }
+
+    ::placeholder {
+    color: #fff;
+    }
+
+    ::-webkit-input-placeholder {
+    color: #fff;
+    }
+
+    :-ms-input-placeholder {
+    color: #fff;
+    }
+
+</style>
+<body>
+    <header>
+        <img src="https://www.meme-arsenal.com/memes/c5fe14cd6620c4b8d568920056ec2458.jpg" alt="" width="200px" height="100px">
+        
+        <p id="tom">TOM & JERRY</p>
+        
+    </header>
+    <form action="" method="get">
+        <div class="wrapper">
+            <div class="search_box">
+                <div class="search_btn"><i class="fas fa-search"></i></div>
+                <input type="text" name="q" class="input_search" placeholder="What are you looking for?">
+            </div>
+        </div>
+    </form>
+    
+    <div class="main">
+
+    <!--cards -->
+    {% block body %}
+    {% endblock %}
+
+    <!--cards -->
+    </div>
+</body>
+</html>
